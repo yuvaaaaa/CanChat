@@ -2,34 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 @property --border-angle {
   inherits: false;
   initial-value: 0deg;
   syntax: "<angle>";
 }
 
+:root {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+body {
+  color: #1f2937;
+  background: #f8f4ea;
+}
+
 .input {
-  @apply w-full bg-slate-800/50 border border-slate-700 rounded-lg py-2 pl-10 pr-4 text-slate-200 placeholder-slate-400 focus:ring-2 focus:ring-cyan-500 focus:border-transparent;
+  @apply w-full bg-amber-50/80 border border-amber-200/80 rounded-xl py-2.5 pl-10 pr-4 text-stone-700 placeholder-stone-400 focus:ring-2 focus:ring-emerald-500/60 focus:border-emerald-500/40;
 }
 
 .auth-input-icon {
-  @apply absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 size-5;
+  @apply absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 size-5;
 }
 
 .auth-input-label {
-  @apply block text-sm font-medium text-slate-300 mb-2;
+  @apply block text-sm font-medium text-stone-600 mb-2;
 }
 
 .auth-badge {
-  @apply inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-cyan-500/20 text-cyan-300;
+  @apply inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-orange-100 text-orange-700 border border-orange-200;
 }
 
 .auth-btn {
-  @apply w-full bg-cyan-500 text-white rounded-lg py-2.5 font-medium
-  hover:bg-cyan-600 focus:ring-2 focus:ring-cyan-500;
+  @apply w-full bg-gradient-to-r from-orange-500 to-rose-500 text-white rounded-xl py-2.5 font-semibold
+  hover:from-orange-600 hover:to-rose-600 focus:ring-2 focus:ring-orange-400/60 transition-all;
 }
 
 .auth-link {
-  @apply px-4 py-2 inline-block bg-cyan-500/10 rounded-lg text-cyan-400
-  hover:text-cyan-500 text-sm transition-colors;
+  @apply px-4 py-2 inline-block bg-emerald-100/70 rounded-xl text-emerald-700
+  hover:bg-emerald-100 hover:text-emerald-800 text-sm font-medium transition-colors;
 }

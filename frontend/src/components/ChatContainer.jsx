@@ -35,7 +35,7 @@ function ChatContainer() {
   return (
     <>
       <ChatHeader />
-      <div className="flex-1 px-6 overflow-y-auto py-8">
+      <div className="flex-1 px-6 overflow-y-auto py-8 bg-[radial-gradient(circle_at_12%_18%,rgba(251,146,60,0.09),transparent_25%),radial-gradient(circle_at_80%_82%,rgba(16,185,129,0.1),transparent_30%)]">
         {messages.length > 0 && !isMessagesLoading ? (
           <div className="max-w-3xl mx-auto space-y-6">
             {messages.map((msg) => (
@@ -46,8 +46,8 @@ function ChatContainer() {
                 <div
                   className={`chat-bubble relative ${
                     msg.senderId === authUser._id
-                      ? "bg-cyan-600 text-white"
-                      : "bg-slate-800 text-slate-200"
+                      ? "bg-gradient-to-r from-orange-500 to-rose-500 text-white"
+                      : "bg-amber-50 border border-amber-200 text-stone-700"
                   }`}
                 >
                   {msg.image && (
