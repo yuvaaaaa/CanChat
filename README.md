@@ -7,22 +7,10 @@ A modern full-stack chat application built with a separate frontend and backend 
 # 📸 Screenshots
 
 ## Home Page
-
-(Add screenshot here)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8eec4471-eb56-48dd-bc3b-5b053b339315" />
 
 ## Login / Signup
-
-(Add screenshot here)
-
-## Chat Interface
-
-(Add screenshot here)
-
-## Mobile View
-
-(Add screenshot here)
-
----
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b2d52048-8c95-416f-a9aa-a1873b5077a9" />
 
 # ✨ Features
 
