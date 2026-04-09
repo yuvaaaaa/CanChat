@@ -51,8 +51,3 @@ A modern full-stack chat application built with a separate frontend and backend 
 * JWT (JSON Web Token)
 * Cookies
 
----
-
-# ⭐ Support
-
-If you like this project, give it a star ⭐
